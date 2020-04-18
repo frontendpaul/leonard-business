@@ -74,6 +74,17 @@ a {
   background: none;
 }
 
+.arrow {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
 
 /* Header */
 .header {
@@ -323,7 +334,7 @@ a {
   padding: 0 31px 31px;
 }
 
-.card img {
+.restaurant-logo {
   margin-left: -31px;
   display: block;
   width: 348px;
@@ -366,4 +377,34 @@ a {
   line-height: 30px;
   letter-spacing: 0.025em;
   color: #2F80ED;
+}
+
+
+/* RISTORANTI ADERENTI */
+.participants {
+  margin-top: 123px;
+  margin-bottom: 100px;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.participants .card {
+  padding: 0;
+  position: relative;
+}
+
+.participants .restaurant-logo {
+  margin: 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.participants .arrow {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
 }
