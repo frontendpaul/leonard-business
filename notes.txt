@@ -1,0 +1,9 @@
+1. The page is coded for the screen size given in .fig (1440px wide). It is NOT YET responsive. As it would look quite good on bigger screens, it is not coded for tablets and mobile. 
+
+I'll be happy to code it for other screen sizes as soon as you figure out the design for those.
+
+2. Modal is coded as a template only and will need to be populated by js developers (altought I'd be able to do it, You hired me for the layout only). I've added basic js so that the corresponding rest_id would be opened in modal.
+
+3. I have added a close button on top/right corner fo a modal for better UX. Clicking outside of modal will also close it.
+
+4. The slider inside of modal is not yet implemented. Will be happy to do it for additional cost.

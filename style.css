@@ -381,7 +381,7 @@ a {
 
 
 /* RISTORANTI ADERENTI */
-.participants {
+.all {
   margin-top: 123px;
   margin-bottom: 100px;
 }
@@ -392,18 +392,22 @@ a {
   align-items: center;
 }
 
-.participants .card {
+.arrow-more {
+  cursor: pointer;
+}
+
+.all .card {
   padding: 0;
   position: relative;
 }
 
-.participants .restaurant-logo {
+.all .restaurant-logo {
   margin: 0;
   border-radius: 5px;
   border: none;
 }
 
-.participants .arrow {
+.all .arrow {
   position: absolute;
   bottom: 18px;
   right: 18px;
@@ -512,4 +516,138 @@ a {
 
 .menu-list .term:first-of-type {
   margin-right: 30px;
+}
+
+
+/* Modal */
+.modal-wrapper {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  padding: 50px 0;
+  width: 100vw;
+  height: 100%;
+  justify-content: center;
+  display: none;
+  overflow: auto;
+}
+
+.modal {
+  width: 1290px;
+  height: 1300px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #AFAFAF;
+  padding: 0 72px 44px;
+  position: relative;
+}
+
+.close {
+  cursor: pointer;
+  width: 27px;
+  height: 27px;
+  padding: 30px;
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  right: 20px;
+  background: url('./media/Close.png') center center no-repeat;
+}
+
+.info-wrapper {
+  display: flex;
+}
+
+.info-wrapper .restaurant-logo {
+  margin-left: -72px;
+  border-bottom: 0;
+  border-right: 1px solid #AFAFAF;
+  border-radius: 10px 0 0 0;
+}
+
+.info {
+  width: 480px;
+  margin-top: 56px;
+  margin-left: 78px;
+}
+
+.info .subtitle {
+  font-size: 32px;
+  letter-spacing: 0.19em;
+  color: #828282;
+}
+
+.info .title {
+  font-size: 55px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.adress {
+  font-size: 37px;
+  line-height: 43px;
+  letter-spacing: 0.025em;
+  color: #777777;
+  margin: 20px 0;
+}
+
+.rest-link {
+  font-size: 37px;
+  line-height: 43px;
+  letter-spacing: 0.025em;
+  color: #2F80ED;
+}
+
+.slider {
+  width: 1288px;
+  display: flex;
+  position: relative;
+  margin-left: -72px;
+}
+
+.slider img {
+  display: block;
+  width: 50%;
+}
+
+.arrow-left {
+  cursor: pointer;
+  width: 80px;
+  height: 153px;
+  position: absolute;
+  z-index: 2;
+  left: 36px;
+  top: 102px;
+  background: url('./media/Arrow-Left.png');
+}
+
+.arrow-right {
+  cursor: pointer;
+  width: 80px;
+  height: 153px;
+  position: absolute;
+  z-index: 2;
+  right: 36px;
+  top: 102px;
+  background: url('./media/Arrow-Right.png');
+}
+
+.modal .desc {
+  font-size: 35px;
+  line-height: 58px;
+  letter-spacing: 0.025em;
+  color: #3E3E3E;
+  margin-top: 82px;
+  margin-bottom: 102px;
+}
+
+.modal-btn:first-of-type {
+  margin-right: 41px;
+}
+
+
+
+.visible {
+  display: flex;
 }
