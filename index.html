@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="header">
+  <header class="header">
     <div class="container">
       <div class="bg-circles">
         <div class="circle"></div>
@@ -30,20 +30,22 @@
             <li><a class="register" href="#" class="menu-link">Registrati</a></li>
           </ul>
         </nav>
-        <div class="logo">
-          <img src="./media/logo.png" alt="" class="logo-img">
-        </div>
+        <a href="index.html">
+          <div class="logo">
+            <img src="./media/logo.png" alt="" class="logo-img">
+          </div>
+        </a>
       </nav>
 
       <!-- Categories -->
       <nav class="categories">
         <ul class="menu-list">
-          <li class="category"><a href="#" class="c1"><span>Pizza</span></a></li>
-          <li class="category"><a href="#" class="c2"><span>Italiana</span></a></li>
-          <li class="category"><a href="#" class="c3"><span>Aperitivo</span></a></li>
-          <li class="category"><a href="#" class="c4"><span>Estera</span></a></li>
-          <li class="category"><a href="#" class="c5"><span>Carne pesce</span></a></li>
-          <li class="category"><a href="#" class="c6"><span>Scpeciali</span></a></li>
+          <li class="category"><a href="category-1.html" class="c1"><span>Pizza</span></a></li>
+          <li class="category"><a href="category-1.html" class="c2"><span>Italiana</span></a></li>
+          <li class="category"><a href="category-1.html" class="c3"><span>Aperitivo</span></a></li>
+          <li class="category"><a href="category-1.html" class="c4"><span>Estera</span></a></li>
+          <li class="category"><a href="category-1.html" class="c5"><span>Carne pesce</span></a></li>
+          <li class="category"><a href="category-1.html" class="c6"><span>Scpeciali</span></a></li>
         </ul>
       </nav>
 
@@ -55,7 +57,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </header>
 
 
 
@@ -164,7 +166,7 @@
         </div>
       </div>
 
-      <a href="" class="more">Scopri gli altri ristoranti <img src="./media/Arrow-2.png" alt=""></a>
+      <a href="./all.html" class="more">Scopri gli altri ristoranti <img src="./media/Arrow-2.png" alt=""></a>
     </section>
 
   </div>
@@ -220,10 +222,29 @@
         </div>
       </div>
       <div class="slider">
-        <div class="arrow-left"></div>
-        <div class="arrow-right"></div>
         <img src="./media/rest-1.jpg" alt="">
         <img src="./media/rest-2.jpg" alt="">
+
+        <!-- <div class="siema">
+          <div>
+            <img src="./media/rest-1.jpg" alt="">
+          </div>
+          <div>
+            <img src="./media/rest-2.jpg" alt="">
+          </div>
+          <div>
+            <img src="./media/rest-1.jpg" alt="">
+          </div>
+          <div>
+            <img src="./media/rest-2.jpg" alt="">
+          </div>
+          <div>
+            <img src="./media/rest-1.jpg" alt="">
+          </div>
+        </div> -->
+        
+        <div class="arrow-left"></div>
+        <div class="arrow-right"></div>
       </div>
       <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros 
         turpis, cursus in vehicula vel, pellentesque semper velit. Mauris in 
@@ -237,6 +258,16 @@
   </div>
 
   <script src="index.js"></script>
+  <script src="siema.min.js"></script>
+
+  <script>    
+    // Slider
+    // const mySiema = new Siema({
+    //   perPage: 2
+    // });
+    // document.querySelector('.arrow-left').addEventListener('click', () => mySiema.prev());
+    // document.querySelector('.arrow-right').addEventListener('click', () => mySiema.next());
+  </script>
 </body>
 
 </html>

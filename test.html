@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="siema">
+    <div>
+      <img src="./media/rest-1.jpg" alt="">
+    </div>
+    <div>
+      <img src="./media/rest-2.jpg" alt="">
+    </div>
+    <div>
+      <img src="./media/rest-1.jpg" alt="">
+    </div>
+    <div>
+      <img src="./media/rest-2.jpg" alt="">
+    </div>
+    <div>
+      <img src="./media/rest-1.jpg" alt="">
+    </div>
+  </div>
+  
+  <div class="arrow-left"></div>
+  <div class="arrow-right"></div>
+
+  <script src="siema.min.js"></script>
+
+  <script>
+    
+// Slider
+const mySiema = new Siema({
+  perPage: 2
+});
+document.querySelector('.arrow-left').addEventListener('click', () => mySiema.prev());
+document.querySelector('.arrow-right').addEventListener('click', () => mySiema.next());
+  </script>
+</body>
+</html>
