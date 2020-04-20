@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="glider.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
-<body>
-  <div class="siema">
-    <div>
-      <img src="./media/rest-1.jpg" alt="">
-    </div>
-    <div>
-      <img src="./media/rest-2.jpg" alt="">
-    </div>
-    <div>
-      <img src="./media/rest-1.jpg" alt="">
-    </div>
-    <div>
-      <img src="./media/rest-2.jpg" alt="">
-    </div>
-    <div>
-      <img src="./media/rest-1.jpg" alt="">
-    </div>
-  </div>
-  
-  <div class="arrow-left"></div>
-  <div class="arrow-right"></div>
 
-  <script src="siema.min.js"></script>
+<body>
+  <div class="glider-contain">
+    <div class="glider">
+      <div><img src="./media/rest-1.jpg" alt=""></div>
+      <div><img src="./media/rest-2.jpg" alt=""></div>
+      <div><img src="./media/rest-1.jpg" alt=""></div>
+      <div><img src="./media/rest-2.jpg" alt=""></div>
+      <div><img src="./media/rest-1.jpg" alt=""></div>
+      <div><img src="./media/rest-2.jpg" alt=""></div>
+    </div>
+
+    <button role="button" aria-label="Previous" class="glider-prev arrow-left"></button>
+    <button role="button" aria-label="Next" class="glider-next arrow-right"></button>
+  </div>
+
+  <!-- <div class="arrow-left glider-prev"></div> -->
+  <!-- <div class="arrow-right glider-next"></div> -->
+
+  <script src="glider.min.js"></script>
 
   <script>
-    
-// Slider
-const mySiema = new Siema({
-  perPage: 2
+
+    // Slider
+    window.addEventListener('load', function () {
+      new Glider(document.querySelector('.glider'), {
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  draggable: true,
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  }
 });
-document.querySelector('.arrow-left').addEventListener('click', () => mySiema.prev());
-document.querySelector('.arrow-right').addEventListener('click', () => mySiema.next());
+    })
+
   </script>
 </body>
+
 </html>

@@ -75,6 +75,10 @@ a {
   background: none;
 }
 
+.js-modal-btn {
+  cursor: pointer;
+}
+
 .arrow {
   width: 64px;
   height: 64px;
@@ -524,6 +528,7 @@ a {
 .modal-wrapper {
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
+  z-index: 5;
   top: 0;
   padding: 50px 0;
   width: 100vw;
@@ -610,15 +615,6 @@ a {
 .slider img {
   width: 50%;
 }
-
-
-/* siema */
-/* .slider {
-  width: 1288px;
-  position: relative;
-  margin-left: -72px;
-} */
-
 
 
 .arrow-left {
