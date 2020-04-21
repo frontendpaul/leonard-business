@@ -142,10 +142,12 @@ a {
   align-items: center;
 }
 
-.search > input {
+.search {
   width: 424px;
   height: 96px;
-  padding: 0 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #fff;
   border: 1px solid #E9E9E9;
   border-radius: 15px;
@@ -154,10 +156,6 @@ a {
   font-weight: 500;
   line-height: 42px;
   letter-spacing: -0.045em;
-}
-
-.search > input:focus {
-  outline: none;
 }
 
 .help {
