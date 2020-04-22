@@ -655,12 +655,12 @@ a {
   cursor: pointer;
   width: 15px;
   height: 15px;
-  padding: 14px;
+  /* padding: 14px; */
   position: absolute;
   z-index: 2;
   top: 20px;
   right: 20px;
-  background: url(./media/Close.png) center center no-repeat;
+  background: url(./media/Close.png) center center/cover no-repeat;
 }
 
 .info-wrapper {
@@ -712,6 +712,7 @@ a {
 .slider {
   width: 100%;
   display: flex;
+  align-items: center;
   position: relative;
 }
 
@@ -769,7 +770,8 @@ a {
 .modal-scroll {
   width: 100%;
   height: 442px;
-  overflow-x: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .btn-modal-wrapper {
@@ -810,7 +812,7 @@ a {
   font-size: 0.9rem;
   letter-spacing: 0.025em;
   color: #2E2E2E;
-  background-color: transparent;
+  background-color: #fff;
   padding: 15px;
   margin: 0px 0;
   height: 50px;
@@ -1545,5 +1547,94 @@ body.in-category {
     height: 20px;
     top: -135px;
     left: 40px;
+  }
+
+
+  /* Modal */
+  .modal-wrapper {
+    padding: 0;
+  }
+  
+  .modal {
+    padding-top: 92px;
+    max-width: 100vw;
+    max-height: 100vh;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .close {
+    top: 102px;
+  }
+
+  .info-wrapper .restaurant-logo {
+    width: 34vw;
+  }
+
+  .info {
+    margin: 9px;
+  }
+
+  .info .subtitle {
+    font-size: 0.7rem;
+    letter-spacing: 0.23em;
+  }
+
+  .info .title {
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 20px;
+  }
+
+  .adress {
+    width: 200px;
+    font-size: 0.8rem;
+    line-height: 16px;
+    letter-spacing: 0.025em;
+    margin: 5px 0;
+  }
+
+  .rest-link {
+    font-size: 0.8rem;
+    letter-spacing: 0.025em;
+    margin: 0;
+  }
+
+  .slider img {
+    width: 100%;
+  }
+
+  .slider img:last-of-type {
+    display: none;
+  }
+
+  .arrow-left {
+    width: 36px;
+    height: 63px;
+    top: 80px;
+    background: url('./media/Arrow-Left-mobile.png') center center/cover no-repeat;
+  }
+
+  .arrow-right {
+    width: 36px;
+    height: 63px;
+    top: 80px;
+    background: url('./media/Arrow-Right-mobile.png') center center/cover no-repeat;
+  }
+
+  .modal .desc {
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 10px;
+  }
+
+  .modal-scroll {
+    height: 100%;
+  }
+
+  .modal-element {
+    padding-top: 10px;
+    background: #fff;
+    height: 110px;
   }
 }
