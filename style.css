@@ -572,9 +572,22 @@ a {
   margin-right: 15px;
 }
 
-.social img {  
+.social a {  
+  display: block;
   width: 22px;
   height: 22px;
+}
+
+.linkedin {
+  background: url('./media/linkedin.png') center center/cover no-repeat;
+}
+
+.insta {
+  background: url('./media/instagram.png') center center/cover no-repeat;
+}
+
+.facebook {
+  background: url('./media/facebook.png') center center/cover no-repeat;
 }
 
 .social:last-of-type {
@@ -605,6 +618,11 @@ a {
 
 .menu-list .term:first-of-type {
   margin-right: 30px;
+}
+
+.mobile-copyright,
+.bg-f-circles {
+  display: none;
 }
 
 
@@ -1380,7 +1398,7 @@ body.in-category {
   }
 
 
-  /* Restaurants */
+  /* All */
   .all {
     margin: 0;
   }
@@ -1426,5 +1444,106 @@ body.in-category {
   .more {
     margin-top: 20px;
   }
+
   
+  /* Footer */
+  .footer {
+    border: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer .row {
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+
+  .footer-logo-wrapper {
+    justify-content: center;
+  }
+
+  .footer-logo-wrapper img {
+    margin: 0 0 15px;
+  }
+
+  .footer-title,
+  .footer-info,
+  .socials-wrapper p, 
+  .footer .row:last-of-type {
+    display: none;
+  }
+
+  .mobile-copyright {
+    text-align: center;
+    display: block;
+  }
+
+  .mobile-copyright p {
+    font-weight: 500;
+    font-size: 0.6rem;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: #DCDCDC;
+    margin: 0 0 3px;
+  }
+
+  .mobile-copyright p:last-of-type {
+    font-size: 0.5rem;
+    margin-bottom: 12px;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .linkedin {
+    background-image: url('./media/linkedin-mobile.png');
+  }
+
+  .insta {
+    background-image: url('./media/instagram-mobile.png');
+  }
+
+  .facebook {
+    background-image: url('./media/facebook-mobile.png');
+  }
+
+  .bg-f-circles {
+    display: block;
+    width: 100px;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .bg-f-circle,
+  .bg-f-circle::before,
+  .bg-f-circle::after {
+    content: '';
+    display: block;
+    position: relative;
+    border: 1px solid #D6DCFF;
+    border-radius: 50%;
+  }
+
+  .bg-f-circle {
+    top: 100px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .bg-f-circle::before {
+    width: 50px;
+    height: 50px;
+    top: -50px;
+  }
+
+  .bg-f-circle::after {
+    width: 20px;
+    height: 20px;
+    top: -135px;
+    left: 40px;
+  }
 }
