@@ -31,22 +31,25 @@
             <li><a class="register" href="#" class="menu-link">Registrati</a></li>
           </ul>
         </nav>
+        <nav class="mobile-nav">
+          <a href="#" class="login">Login <img src="./media/user.png " alt="" class="login-img"></a>
+          <div class="mobile-menu-toggler">
+            <div class="burger-bar"></div>
+          </div>
+        </nav>
         <a href="index.html">
           <div class="logo">
             <img src="./media/logo.png" alt="" class="logo-img">
           </div>
         </a>
       </nav>
-      <div class="discover">
-        <h2 class="scopri">Scopri</h2>
-        <div class="discover-links-wrapper">
-          <a href="all.html" class="discover-link">I ristoranti che collaborano con noi</a>
-          <p href="#" class="discover-link discover-link-span">- oppure -</p>
-          <a href="#" class="discover-link">Registra il tuo ristorante</a>
-        </div>
-      </div>
+      
       <!-- Categories -->
       <nav class="categories">
+        <div class="mobile-cat-title">
+          <h3 class="subtitle">SCOPRI LE CATEGORIE</h3>
+          <h2 class="title">Cosa vuoi mangiare oggi?</h2>
+        </div>
         <ul class="menu-list">
           <li class="category"><a href="category-1.html" class="c1"><span>Pizza</span></a></li>
           <li class="category"><a href="category-1.html" class="c2"><span>Italiana</span></a></li>
@@ -56,12 +59,20 @@
           <li class="category"><a href="category-1.html" class="c6"><span>Speciali</span></a></li>
         </ul>
       </nav>
-
+      <div class="discover">
+        <h2 class="scopri">Scopri</h2>
+        <div class="discover-links-wrapper">
+          <a href="all.html" class="discover-link mobile-hide">I ristoranti che collaborano con noi</a>
+          <a href="all.html" class="discover-link aderenti">Ristoranti Aderenti</a>
+          <p href="#" class="discover-link discover-link-span mobile-hide">- oppure -</p>
+          <a href="#" class="discover-link">Registra il tuo ristorante</a>
+        </div>
+      </div>
     </div>
   </header>
 
 
-
+  <!-- Restaurants -->
   <div class="container">
     <section class="restaurants">
       <section class="rel-spacing">
@@ -76,59 +87,88 @@
       <div class="cards">
         <div class="card">
           <img src="./media/rest-logo.png" alt="Ago e Lillo" class="restaurant-logo">
-          <h3 class="subtitle">BISTROT</h3>
-          <h2 class="title">Ago e Lillo</h2>
-          <p class="desc">Lorem ipsum dolor sit amet, consectetur...</p>
-          <div class="btn-wrapper">
-            <div class="btn btn-secondary qeust js-modal-btn" id="rest_id-1">?</div>
-            <a href="#" class="btn">Prenota ora</a>
+          <div class="mobile-card-wrapper">
+            <h3 class="subtitle">BISTROT</h3>
+            <h2 class="title">Ago e Lillo</h2>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur...</p>
+            <div class="btn btn-secondary mobile-qeust js-modal-btn" id="rest_id-1">?</div>
+            <div class="mobile-btn-wrapper">
+              <div class="btn-wrapper">
+                <div class="btn btn-secondary qeust js-modal-btn" id="rest_id-1">?</div>
+                <a href="#" class="btn buy-now">Prenota ora</a>
+              </div>
+              <p class="delivery-mothods">Altri metodi</p>
+              <a href="#" class="btn btn-secondary mobile-hide">Ordina a domicilio</a>
+              <a href="#" class="btn btn-secondary mobile-hide">Ordina Takeaway</a>
+              <a href="#" class="btn btn-secondary pickup"></a>
+              <a href="#" class="btn btn-secondary home-delivery"></a>
+            </div>
           </div>
-          <p>Altri metodi</p>
-          <a href="#" class="btn btn-secondary">Ordina a domicilio</a>
-          <a href="#" class="btn btn-secondary">Ordina Takeaway</a>
         </div>
 
         <div class="card">
           <img src="./media/rest-logo.png" alt="Ago e Lillo" class="restaurant-logo">
-          <h3 class="subtitle">BISTROT</h3>
-          <h2 class="title">Ago e Lillo</h2>
-          <p class="desc">Lorem ipsum dolor sit amet, consectetur...</p>
-          <div class="btn-wrapper">
-            <div class="btn btn-secondary qeust js-modal-btn" id="rest_id-1">?</div>
-            <a href="#" class="btn">Prenota ora</a>
+          <div class="mobile-card-wrapper">
+            <h3 class="subtitle">BISTROT</h3>
+            <h2 class="title">Ago e Lillo</h2>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur...</p>
+            <div class="btn btn-secondary mobile-qeust js-modal-btn" id="rest_id-1">?</div>
+            <div class="mobile-btn-wrapper">
+              <div class="btn-wrapper">
+                <div class="btn btn-secondary qeust js-modal-btn" id="rest_id-1">?</div>
+                <a href="#" class="btn buy-now">Prenota ora</a>
+              </div>
+              <p class="delivery-mothods">Altri metodi</p>
+              <a href="#" class="btn btn-secondary mobile-hide">Ordina a domicilio</a>
+              <a href="#" class="btn btn-secondary mobile-hide">Ordina Takeaway</a>
+              <a href="#" class="btn btn-secondary pickup"></a>
+              <a href="#" class="btn btn-secondary home-delivery"></a>
+            </div>
           </div>
-          <p>Altri metodi</p>
-          <a href="#" class="btn btn-secondary">Ordina a domicilio</a>
-          <a href="#" class="btn btn-secondary">Ordina Takeaway</a>
         </div>
 
         <div class="card">
           <img src="./media/rest-logo.png" alt="Ago e Lillo" class="restaurant-logo">
-          <h3 class="subtitle">BISTROT</h3>
-          <h2 class="title">Ago e Lillo</h2>
-          <p class="desc">Lorem ipsum dolor sit amet, consectetur...</p>
-          <div class="btn-wrapper">
-            <div class="btn btn-secondary qeust js-modal-btn" id="rest_id-2">?</div>
-            <a href="#" class="btn">Prenota ora</a>
+          <div class="mobile-card-wrapper">
+            <h3 class="subtitle">BISTROT</h3>
+            <h2 class="title">Ago e Lillo</h2>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur...</p>
+            <div class="btn btn-secondary mobile-qeust js-modal-btn" id="rest_id-1">?</div>
+            <div class="mobile-btn-wrapper">
+              <div class="btn-wrapper">
+                <div class="btn btn-secondary qeust js-modal-btn" id="rest_id-1">?</div>
+                <a href="#" class="btn buy-now">Prenota ora</a>
+              </div>
+              <p class="delivery-mothods">Altri metodi</p>
+              <a href="#" class="btn btn-secondary mobile-hide">Ordina a domicilio</a>
+              <a href="#" class="btn btn-secondary mobile-hide">Ordina Takeaway</a>
+              <a href="#" class="btn btn-secondary pickup"></a>
+              <a href="#" class="btn btn-secondary home-delivery"></a>
+            </div>
           </div>
-          <p>Altri metodi</p>
-          <a href="#" class="btn btn-secondary">Ordina a domicilio</a>
-          <a href="#" class="btn btn-secondary">Ordina Takeaway</a>
         </div>
 
         <div class="card">
           <img src="./media/rest-logo.png" alt="Ago e Lillo" class="restaurant-logo">
-          <h3 class="subtitle">BISTROT</h3>
-          <h2 class="title">Ago e Lillo</h2>
-          <p class="desc">Lorem ipsum dolor sit amet, consectetur...</p>
-          <div class="btn-wrapper">
-            <div class="btn btn-secondary qeust js-modal-btn" id="rest_id-3">?</div>
-            <a href="#" class="btn">Prenota ora</a>
+          <div class="mobile-card-wrapper">
+            <h3 class="subtitle">BISTROT</h3>
+            <h2 class="title">Ago e Lillo</h2>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur...</p>
+            <div class="btn btn-secondary mobile-qeust js-modal-btn" id="rest_id-1">?</div>
+            <div class="mobile-btn-wrapper">
+              <div class="btn-wrapper">
+                <div class="btn btn-secondary qeust js-modal-btn" id="rest_id-1">?</div>
+                <a href="#" class="btn buy-now">Prenota ora</a>
+              </div>
+              <p class="delivery-mothods">Altri metodi</p>
+              <a href="#" class="btn btn-secondary mobile-hide">Ordina a domicilio</a>
+              <a href="#" class="btn btn-secondary mobile-hide">Ordina Takeaway</a>
+              <a href="#" class="btn btn-secondary pickup"></a>
+              <a href="#" class="btn btn-secondary home-delivery"></a>
+            </div>
           </div>
-          <p>Altri metodi</p>
-          <a href="#" class="btn btn-secondary">Ordina a domicilio</a>
-          <a href="#" class="btn btn-secondary">Ordina Takeaway</a>
-        </div>        
+        </div>
+
       </div>
     </section>
 
@@ -144,50 +184,62 @@
         <div class="card">
           <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
           <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
+          <div class="click"><img src="./media/click.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
         </div>
         <div class="card">
           <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
           <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
+          <div class="click"><img src="./media/click.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
         </div>
         <div class="card">
           <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
           <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-2" class="js-modal-btn"></div>
+          <div class="click"><img src="./media/click.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
         </div>
         <div class="card">
           <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
           <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-3" class="js-modal-btn"></div>
+          <div class="click"><img src="./media/click.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
         </div>
         <div class="card">
           <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
           <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-4" class="js-modal-btn"></div>
+          <div class="click"><img src="./media/click.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
         </div>
         <div class="card">
           <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
           <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
+          <div class="click"><img src="./media/click.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
         </div>
         <div class="card">
           <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
           <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-5" class="js-modal-btn"></div>
+          <div class="click"><img src="./media/click.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
         </div>
         <div class="card">
           <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
           <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-6" class="js-modal-btn"></div>
+          <div class="click"><img src="./media/click.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
         </div>
         <div class="card">
           <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
           <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-4" class="js-modal-btn"></div>
+          <div class="click"><img src="./media/click.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
         </div>
         <div class="card">
           <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
           <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
+          <div class="click"><img src="./media/click.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
         </div>
         <div class="card">
           <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
           <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-5" class="js-modal-btn"></div>
+          <div class="click"><img src="./media/click.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
         </div>
         <div class="card">
           <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
           <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-6" class="js-modal-btn"></div>
+          <div class="click"><img src="./media/click.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
         </div>
       </div>
       
