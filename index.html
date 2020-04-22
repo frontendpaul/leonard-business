@@ -4,13 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Leonard Business</title>
 </head>
 
 <body>
   <header class="header">
+    <div class="bg-shd-top"></div>
     <div class="container">
       <div class="bg-circles">
         <div class="circle"></div>
@@ -24,7 +26,8 @@
         </div>
         <nav class="guest-nav">
           <ul class="menu-list">
-            <li><a class="login" href="#" class="menu-link">Login</a></li>
+            <li><a class="login" class="menu-link">Benvenuto <i style="opacity: 0.8; position: relative; top: 1px; left: 7px;" class="fas fa-caret-right"></i></a></li>
+            <li><a class="login" href="#" class="menu-link" style="font-weight: 500;">Login</a></li>
             <li><a class="register" href="#" class="menu-link">Registrati</a></li>
           </ul>
         </nav>
@@ -34,7 +37,14 @@
           </div>
         </a>
       </nav>
-
+      <div class="discover">
+        <h2 class="scopri">Scopri</h2>
+        <div class="discover-links-wrapper">
+          <a href="all.html" class="discover-link">I ristoranti che collaborano con noi</a>
+          <p href="#" class="discover-link discover-link-span">- oppure -</p>
+          <a href="#" class="discover-link">Registra il tuo ristorante</a>
+        </div>
+      </div>
       <!-- Categories -->
       <nav class="categories">
         <ul class="menu-list">
@@ -43,17 +53,10 @@
           <li class="category"><a href="category-1.html" class="c3"><span>Aperitivo</span></a></li>
           <li class="category"><a href="category-1.html" class="c4"><span>Estera</span></a></li>
           <li class="category"><a href="category-1.html" class="c5"><span>Carne pesce</span></a></li>
-          <li class="category"><a href="category-1.html" class="c6"><span>Scpeciali</span></a></li>
+          <li class="category"><a href="category-1.html" class="c6"><span>Speciali</span></a></li>
         </ul>
       </nav>
 
-      <div class="discover">
-        <h2 class="scopri">Scopri</h2>
-        <div class="discover-links-wrapper">
-          <a href="#" class="discover-link">I ristoranti che collaborano con noi</a>
-          <a href="#" class="discover-link">Registra il tuo ristorante</a>
-        </div>
-      </div>
     </div>
   </header>
 
@@ -61,14 +64,30 @@
 
   <div class="container">
     <section class="restaurants">
-      <div class="star">
-        <img src="./media/star.png" alt="star">
-        <p>I più richiesti</p>
-      </div>
-      <h3 class="subtitle">Ristoranti</h3>
-      <h2 class="title">IN PRIMO PIANO</h2>
+      <section class="rel-spacing">
+        <div class="star">
+          <img src="./media/star.png" alt="star">
+          <p>I più richiesti</p>
+        </div>
+        <h3 class="subtitle">Ristoranti</h3>
+        <h2 class="title">IN PRIMO PIANO</h2>
+      </section>
 
       <div class="cards">
+        <div class="card">
+          <img src="./media/rest-logo.png" alt="Ago e Lillo" class="restaurant-logo">
+          <h3 class="subtitle">BISTROT</h3>
+          <h2 class="title">Ago e Lillo</h2>
+          <p class="desc">Lorem ipsum dolor sit amet, consectetur...</p>
+          <div class="btn-wrapper">
+            <div class="btn btn-secondary qeust js-modal-btn" id="rest_id-1">?</div>
+            <a href="#" class="btn">Prenota ora</a>
+          </div>
+          <p>Altri metodi</p>
+          <a href="#" class="btn btn-secondary">Ordina a domicilio</a>
+          <a href="#" class="btn btn-secondary">Ordina Takeaway</a>
+        </div>
+
         <div class="card">
           <img src="./media/rest-logo.png" alt="Ago e Lillo" class="restaurant-logo">
           <h3 class="subtitle">BISTROT</h3>
@@ -121,7 +140,11 @@
         </div>
         <img src="./media/Arrow-black.png" alt="" class="arrow-more">
       </div>
-      <div class="cards">
+      <div class="cards cards-all">
+        <div class="card">
+          <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
+          <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
+        </div>
         <div class="card">
           <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
           <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
@@ -134,11 +157,29 @@
           <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
           <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-3" class="js-modal-btn"></div>
         </div>
-      </div>
-      <div class="cards">
         <div class="card">
           <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
           <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-4" class="js-modal-btn"></div>
+        </div>
+        <div class="card">
+          <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
+          <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
+        </div>
+        <div class="card">
+          <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
+          <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-5" class="js-modal-btn"></div>
+        </div>
+        <div class="card">
+          <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
+          <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-6" class="js-modal-btn"></div>
+        </div>
+        <div class="card">
+          <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
+          <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-4" class="js-modal-btn"></div>
+        </div>
+        <div class="card">
+          <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
+          <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-1" class="js-modal-btn"></div>
         </div>
         <div class="card">
           <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
@@ -149,21 +190,7 @@
           <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-6" class="js-modal-btn"></div>
         </div>
       </div>
-      <div class="cards">
-        <div class="card">
-          <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
-          <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-7" class="js-modal-btn"></div>
-        </div>
-        <div class="card">
-          <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
-          <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-8" class="js-modal-btn"></div>
-        </div>
-        <div class="card">
-          <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
-          <div class="arrow"><img src="./media/Arrow.png" alt="" id="rest_id-9" class="js-modal-btn"></div>
-        </div>
-      </div>
-
+      
       <a href="./all.html" class="more">Scopri gli altri ristoranti <img src="./media/Arrow-2.png" alt=""></a>
     </section>
 
@@ -210,29 +237,41 @@
   <div class="modal-wrapper">
     <section class="modal">
       <div class="close"></div>
-      <div class="info-wrapper">
-        <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
-        <div class="info">
-          <h3 class="subtitle">Bistrot</h3>
-          <h2 class="title">Ago e Lillo</h2>
-          <p class="adress">Piazza del Risorgimento, 48 00192 Roma RM</p>
-          <a href="" class="rest-link">www.agoelillobistrot.it</a>
+      <section class="modal-scroll">
+        <div class="info-wrapper">
+          <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
+          <div class="info">
+            <h3 class="subtitle">Bistrot</h3>
+            <h2 class="title">Ago e Lillo</h2>
+            <p class="adress">Piazza del Risorgimento, 48 00192 Roma RM</p>
+            <a href="" class="rest-link">www.agoelillobistrot.it</a>
+          </div>
         </div>
-      </div>
-      <div class="slider">
-        <img src="./media/rest-1.jpg" alt="">
-        <img src="./media/rest-2.jpg" alt="">
-        <div class="arrow-left"></div>
-        <div class="arrow-right"></div>
-      </div>
-      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros 
-        turpis, cursus in vehicula vel, pellentesque semper velit. Mauris in 
-        augue mauris. Pellentesque vitae dui et lacus pretium accumsan.</p>
-      <a href="" class="btn">PRENOTA ORA</a>
-      <div class="btn-wrapper">
-        <a href="" class="btn btn-secondary modal-btn">Ordina a domicilio</a>
-        <a href="" class="btn btn-secondary modal-btn">Ordina Takeaway</a>
-      </div> 
+        <div class="slider">
+          <img src="./media/rest-1.jpg" alt="">
+          <img src="./media/rest-2.jpg" alt="">
+          <div class="arrow-left"></div>
+          <div class="arrow-right"></div>
+        </div>
+        <p class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros 
+          turpis, cursus in vehicula vel, pellentesque semper velit. Mauris in 
+          augue mauris. Pellentesque vitae dui et lacus pretium accumsan.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros 
+          turpis, cursus in vehicula vel, pellentesque semper velit. Mauris in 
+          augue mauris. Pellentesque vitae dui et lacus pretium accumsan.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros 
+          turpis, cursus in vehicula vel, pellentesque semper velit. Mauris in 
+          augue mauris. Pellentesque vitae dui et lacus pretium accumsan.
+        </p>
+      </section>
+        <div class="modal-element">
+          <a href="" class="btn-modal"><i class="fas fa-utensils"></i>PRENOTA ORA</a>
+          <div class="btn-modal-wrapper">
+            <a href="" class="btn-modal-sec btn-secondary modal-btn sec-line"><i class="fas fa-motorcycle"></i>Ordina a domicilio</a>
+            <a href="" class="btn-modal-sec btn-secondary modal-btn"><i class="fas fa-shopping-bag"></i>Ordina Takeaway</a>
+          </div>
+        </div>
     </section>
   </div>
 

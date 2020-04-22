@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Pizza</title>
+  <title>Ricerca: Pizza</title>
 </head>
 
 <body class="in-category">
@@ -28,6 +29,7 @@
         </div>
         <nav class="guest-nav in-category">
           <ul class="menu-list">
+            <li><a class="login" href="index.html" class="menu-link">Torna alla Home</a></li>
             <li><a class="login" href="#" class="menu-link">Login</a></li>
             <li><a class="register" href="#" class="menu-link">Registrati</a></li>
           </ul>
@@ -66,9 +68,6 @@
         <div class="cat-rest-logo">
           <img src="./media/rest-logo-2.png" alt="">
         </div>
-        <div class="mini-map">
-          <img src="./media/map-placeholder.png" alt="">
-        </div>
         <div class="cat-rest-info">
           <h2 class="cat-rest-name">Alice Pizza - La Storta</h2>
           <h3 class="cat-rest-category">Cat. <span>Pizza</span></h3>
@@ -85,9 +84,6 @@
         <div class="cat-rest-logo">
           <img src="./media/rest-logo-2.png" alt="">
         </div>
-        <div class="mini-map">
-          <img src="./media/map-placeholder.png" alt="">
-        </div>
         <div class="cat-rest-info">
           <h2 class="cat-rest-name">Alice Pizza - La Storta</h2>
           <h3 class="cat-rest-category">Cat. <span>Pizza</span></h3>
@@ -103,9 +99,6 @@
         <img src="./media/pizza-2.jpg" alt="" class="cat-rest-img">
         <div class="cat-rest-logo">
           <img src="./media/rest-logo-2.png" alt="">
-        </div>
-        <div class="mini-map">
-          <img src="./media/map-placeholder.png" alt="">
         </div>
         <div class="cat-rest-info">
           <h2 class="cat-rest-name">Alice Pizza - La Storta</h2>
@@ -161,48 +154,41 @@
   <div class="modal-wrapper">
     <section class="modal">
       <div class="close"></div>
-      <div class="info-wrapper">
-        <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
-        <div class="info">
-          <h3 class="subtitle">Bistrot</h3>
-          <h2 class="title">Ago e Lillo</h2>
-          <p class="adress">Piazza del Risorgimento, 48 00192 Roma RM</p>
-          <a href="" class="rest-link">www.agoelillobistrot.it</a>
+      <section class="modal-scroll">
+        <div class="info-wrapper">
+          <img src="./media/rest-logo.png" alt="" class="restaurant-logo">
+          <div class="info">
+            <h3 class="subtitle">Bistrot</h3>
+            <h2 class="title">Ago e Lillo</h2>
+            <p class="adress">Piazza del Risorgimento, 48 00192 Roma RM</p>
+            <a href="" class="rest-link">www.agoelillobistrot.it</a>
+          </div>
         </div>
-      </div>
-      <div class="slider">
-        <img src="./media/rest-1.jpg" alt="">
-        <img src="./media/rest-2.jpg" alt="">
-
-        <!-- <div class="siema">
-          <div>
-            <img src="./media/rest-1.jpg" alt="">
+        <div class="slider">
+          <img src="./media/rest-1.jpg" alt="">
+          <img src="./media/rest-2.jpg" alt="">
+          <div class="arrow-left"></div>
+          <div class="arrow-right"></div>
+        </div>
+        <p class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros 
+          turpis, cursus in vehicula vel, pellentesque semper velit. Mauris in 
+          augue mauris. Pellentesque vitae dui et lacus pretium accumsan.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros 
+          turpis, cursus in vehicula vel, pellentesque semper velit. Mauris in 
+          augue mauris. Pellentesque vitae dui et lacus pretium accumsan.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros 
+          turpis, cursus in vehicula vel, pellentesque semper velit. Mauris in 
+          augue mauris. Pellentesque vitae dui et lacus pretium accumsan.
+        </p>
+      </section>
+        <div class="modal-element">
+          <a href="" class="btn-modal"><i class="fas fa-utensils"></i>PRENOTA ORA</a>
+          <div class="btn-modal-wrapper">
+            <a href="" class="btn-modal-sec btn-secondary modal-btn sec-line"><i class="fas fa-motorcycle"></i>Ordina a domicilio</a>
+            <a href="" class="btn-modal-sec btn-secondary modal-btn"><i class="fas fa-shopping-bag"></i>Ordina Takeaway</a>
           </div>
-          <div>
-            <img src="./media/rest-2.jpg" alt="">
-          </div>
-          <div>
-            <img src="./media/rest-1.jpg" alt="">
-          </div>
-          <div>
-            <img src="./media/rest-2.jpg" alt="">
-          </div>
-          <div>
-            <img src="./media/rest-1.jpg" alt="">
-          </div>
-        </div> -->
-
-        <div class="arrow-left"></div>
-        <div class="arrow-right"></div>
-      </div>
-      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros
-        turpis, cursus in vehicula vel, pellentesque semper velit. Mauris in
-        augue mauris. Pellentesque vitae dui et lacus pretium accumsan.</p>
-      <a href="" class="btn">PRENOTA ORA</a>
-      <div class="btn-wrapper">
-        <a href="" class="btn btn-secondary modal-btn">Ordina a domicilio</a>
-        <a href="" class="btn btn-secondary modal-btn">Ordina Takeaway</a>
-      </div>
+        </div>
     </section>
   </div>
 

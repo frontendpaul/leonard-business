@@ -20,9 +20,12 @@ a {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 0 120px;
+  padding: 35px 0px;
+  display: block;
+  position: relative;
+  z-index: 3;
 }
 
 .menu-list {
@@ -34,7 +37,7 @@ a {
 
 .title {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.15;
   letter-spacing: 0.025em;
   color: #1A1A1A;
@@ -43,7 +46,7 @@ a {
 
 .subtitle {  
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   line-height: 1.15;
   letter-spacing: 0.18em;
   color: #CFCFCF;
@@ -62,12 +65,13 @@ a {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   letter-spacing: 0.025em;
   color: #FFFFFF;
   background: var(--primary);
   padding: 15px;
   margin: 13px 0;
+  height: 45px;
 }
 
 .btn-secondary {
@@ -77,17 +81,18 @@ a {
 }
 
 .js-modal-btn {
+  width: 18px;
   cursor: pointer;
 }
 
 .arrow {
-  width: 55px;
-  height: 55px;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--primary);
-  border-radius: 15px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -95,10 +100,20 @@ a {
 /* Header */
 .header {
   width: 100vw;
-  height: 660px;
-  background: url('./media/bg.jpg') no-repeat;
-  padding-top: 50px;
-  border-bottom: 1px solid #E9E9E9;
+  height: 545px;
+  background: url(./media/bg.jpg) no-repeat center center;
+  padding-top: 0px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.bg-shd-top {
+  z-index: 2;
+  width: 100vw;
+  height: 130px;
+  position: absolute;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,0.7077205882352942) 0%, rgba(0,0,0,0.4472163865546218) 25%, rgba(0,0,0,0) 100%);
 }
 
 .bg-circles {
@@ -115,21 +130,21 @@ a {
   width: 700px;
   height: 700px;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.07);
   position: relative;
-  top: -350px;
+  top: -150px;
 }
 
 .circle::after {
   content: '';
   display: block;
-  width: 700px;
-  height: 700px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.07);
   position: relative;
   top: 200px;
-  left: 70px;
+  left: 300px;
 }
 
 
@@ -144,31 +159,30 @@ a {
 }
 
 .search {
-  width: 324px;
-  height: 66px;
+  width: 235px;
+  height: 53px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
   border: 1px solid #E9E9E9;
-  border-radius: 15px;
-  color: #090909;
-  font-weight: 500;
-  font-size: 1.4rem;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.1rem;
   line-height: 1.15;
   letter-spacing: -0.045em;
 }
 
 .help {
-  width: 100px;
-  height: 46px;
+  width: 85px;
+  height: 39px;
   background: #B6D5FF;
   box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.18);
   border-radius: 5px;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.15;
-  margin-left: 105px;
+  margin-left: 27px;
 }
 
 .help a{  
@@ -186,30 +200,35 @@ a {
 
 .guest-nav {
   margin-left: auto;
-  margin-right: 44px;
+  margin-right: 31px;
   font-size: 1.5rem;
   letter-spacing: -0.045em;
 }
 
 .login {
-  color: #1c1d1c;
-  margin-right: 32px;
+  color: #f1f1f1;
+  margin-right: 19px;
+  font-size: 17px;
+  letter-spacing: 0.04rem;
+  font-weight: 300;
 }
 
 .register {
+  color: #f1f1f1;
+  font-size: 17px;
+  letter-spacing: 0.04rem;
   font-weight: 500;
-  color: #1c1d1c;
 }
 
 .logo-img {
-  width: 76px;
-  height: 76px;
+  width: 65px;
+  height: 65px;
 }
 
 
 /* Categories */
 .categories {
-  margin-top: 80px;
+  margin-top: 43px;
 }
 
 .categories > .menu-list {  
@@ -218,8 +237,8 @@ a {
 }
 
 .category {
-  width: 180px;
-  height: 268px;
+  width: 140px;
+  height: 245px;
 }
 
 .category a {
@@ -228,11 +247,11 @@ a {
   justify-content: center;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
 
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.025em;
   color: #000000;
@@ -242,10 +261,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 146px;
-  height: 50px;
-  background: #fff;
-  border-radius: 8px;
+  width: 107px;
+  height: 43px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .c1 {
@@ -268,17 +289,17 @@ a {
 }
 
 .discover {
-  width: 50%;
+  width: 100%;
   /* margin-top: 47px; */
   margin-left: auto;
 }
 
 .scopri {
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 1.15;
-  letter-spacing: 0.07em;
-  color: #D6D6D6;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 0.5;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 
 .discover-links-wrapper {
@@ -287,15 +308,24 @@ a {
 
 .discover-link {
   display: block;
-  width: 256px;
-  font-size: 1.5rem;
+  font-size: 0.9rem;
   letter-spacing: 0.02em;
-  color: #2F80ED;
-  margin-right: 68px;
+  color: #ffffff;
+}
+
+.discover-link-span {
+  display: block;
+  font-weight: 400 !important;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  opacity: 0.7;
+  padding: 0px 15px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .discover-link:last-of-type {
-  font-weight: 700;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -304,27 +334,33 @@ a {
 .restaurants {
   text-align: center;
   position: relative;
-  padding-top: 60px;
+  padding-top: 0px;
+}
+
+.rel-spacing {
+  display: block;
+  position: relative;
+  margin: 25px 0px 55px 0px;
 }
 
 .star {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 50px;
+  top: 0px;
 }
 
 .star img {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
 }
 
 .star p {
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1rem;
   letter-spacing: 0.025em;
   color: #FCB61D;
-  margin-left: 17px;
+  margin-left: 13px;
 }
 
 .cards {
@@ -333,38 +369,43 @@ a {
   justify-content: space-between;
 }
 
+.cards-all {  
+  flex-wrap: wrap;
+}
+
 .card {
-  width: 350px;
+  width: 215px;
   background: #F8F8F8;
-  border: 1px solid #AFAFAF;
+  border: 1px solid #E9E9E9;
   border-radius: 5px;
   text-align: left;
   padding: 0 20px 10px;
+  margin-bottom: 20px;
   overflow: hidden;
 }
 
 .restaurant-logo {
   margin-left: -20px;
   display: block;
-  width: 348px;
-  border-bottom: 1px solid #AFAFAF;
+  width: 215px;
+  border-bottom: 1px solid #E9E9E9;
 }
 
 .card .subtitle {
   margin-top: 20px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.15;
   letter-spacing: 0.23em;
   color: #BDBDBD;
 }
 
 .card .title {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: #000000;
 }
 
 .desc {
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.3;
   letter-spacing: 0.025em;
   color: #4F4F4F;
@@ -376,13 +417,14 @@ a {
 }
 
 .qeust {
-  width: 82px;
+  width: 50px;
+  height: 45px;
   margin-right: 13px;
 }
 
 .card p:nth-of-type(2) {
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   line-height: 1.15;
   letter-spacing: 0.025em;
   color: #2F80ED;
@@ -400,9 +442,11 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 65px 0px;
 }
 
 .arrow-more {
+  width: 25px;
   cursor: pointer;
 }
 
@@ -423,19 +467,19 @@ a {
 }
 
 .more {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.15;
   letter-spacing: 0.025em;
   color: #2F80ED;
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
 .more img {
-  width: 27px;
-  height: 24px;
+  width: 18px;
+  height: 16px;
   margin-left: 18px;
 }
 
@@ -443,9 +487,9 @@ a {
 /* Footer */
 .footer {
   width: 100vw;
-  height: 262px;
-  padding: 35px 0;
-  border-top: 1px solid #AFAFAF;
+  height: 210px;
+  padding: 0px;
+  border-top: 1px solid #E9E9E9;
   background: #fff;
 }
 
@@ -461,14 +505,14 @@ a {
 
 .footer-logo-wrapper img {
   margin-right: 25px;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
 }
 
 .footer-title {
   font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 35px;
+  font-size: 1.1rem;
+  line-height: 18px;
   letter-spacing: 0.01em;
   color: #393939;
   margin: 0;
@@ -476,34 +520,35 @@ a {
 
 .footer-info {
   font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 26px;
+  font-size: 0.8rem;
+  line-height: 18px;
   letter-spacing: 0.01em;
   color: #A3A3A3;
   margin: 0.3em 0;
 }
 
 .socials-wrapper p {
-  font-size: 1.2em;
+  font-size: 0.9em;
   line-height: 21px;
   letter-spacing: 0.13em;
   text-transform: uppercase;
   color: #363636;
+  text-align: right;
 }
 
 .socials {
-  margin-top: 24px;
+  margin-top: 10px;
   display: flex;
   justify-content: flex-end;
 }
 
 .social {
-  margin-right: 34px;
+  margin-right: 15px;
 }
 
 .social img {  
-  width: 36px;
-  height: 36px;
+  width: 22px;
+  height: 22px;
 }
 
 .social:last-of-type {
@@ -512,20 +557,20 @@ a {
 
 .rights {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.7rem;
   letter-spacing: 0.13em;
   text-transform: uppercase;
   color: #C8C8C8;
-  margin-top: 45px;
+  margin-top: 28px;
 }
 
 .terms {
-  margin-top: 45px;
+  margin-top: 21px;
 }
 
 .term a {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.7rem;
   letter-spacing: 0.13em;
   text-decoration-line: underline;
   text-transform: uppercase;
@@ -552,26 +597,26 @@ a {
 }
 
 .modal {
-  width: 900px;
-  height: 980px;
+  max-width: 600px;
+  max-height: 545px;
   background: #fff;
   border-radius: 10px;
   border: 1px solid #AFAFAF;
-  padding: 0 42px 24px;
+  padding: 0px;
   position: relative;
   overflow: hidden;
 }
 
 .close {
   cursor: pointer;
-  width: 27px;
-  height: 27px;
-  padding: 30px;
+  width: 15px;
+  height: 15px;
+  padding: 14px;
   position: absolute;
   z-index: 2;
   top: 20px;
   right: 20px;
-  background: url('./media/Close.png') center center no-repeat;
+  background: url(./media/Close.png) center center no-repeat;
 }
 
 .info-wrapper {
@@ -580,50 +625,50 @@ a {
 }
 
 .info-wrapper .restaurant-logo {
-  margin-left: -42px;
   border-bottom: 0;
-  border-right: 1px solid #AFAFAF;
+  border-right: 1px solid #E9E9E9;
+  width: 170px;
+  margin: unset;
 }
 
 .info {
-  width: 480px;
-  margin-top: 26px;
-  margin-left: 38px;
+  width: auto;
+  margin-left: 25px;
 }
 
 .info .subtitle {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   letter-spacing: 0.19em;
   color: #828282;
 }
 
 .info .title {
-  font-size: 2.2rem;
-  line-height: 1.2;
-  letter-spacing: 0.05em;
+  font-size: 1.5rem;
+  line-height: 0.8;
+  letter-spacing: 0.02em;
   color: #000000;
 }
 
 .adress {
-  font-size: 1.3rem;
-  line-height: 2;
+  font-size: 1rem;
+  line-height: 1.2;
   letter-spacing: 0.025em;
   color: #777777;
-  margin: 20px 0;
+  margin: 13px 0;
+  width: 280px;
 }
 
 .rest-link {
-  font-size: 1.4rem;
-  line-height: 2;
+  font-size: 1rem;
+  line-height: 0.1;
   letter-spacing: 0.025em;
   color: #2F80ED;
 }
 
 .slider {
-  width: 898px;
+  width: 100%;
   display: flex;
   position: relative;
-  margin-left: -42px;
 }
 
 .slider img {
@@ -637,9 +682,10 @@ a {
   height: 76px;
   position: absolute;
   z-index: 2;
-  left: 36px;
-  top: 102px;
-  background: url('./media/Arrow-Left.png') center center/cover;
+  left: 16px;
+  top: 50px;
+  background: url(./media/Arrow-Left.png) center center/cover;
+  opacity: 0.9;
 }
 
 .arrow-right {
@@ -648,22 +694,90 @@ a {
   height: 76px;
   position: absolute;
   z-index: 2;
-  right: 36px;
-  top: 102px;
+  right: 16px;
+  top: 50px;
   background: url('./media/Arrow-Right.png') center center/cover;
+  opacity: 0.9;
 }
 
 .modal .desc {
-  font-size: 1.3rem;
-  line-height: 2;
+  font-size: 0.8rem;
+  line-height: 1.7;
   letter-spacing: 0.025em;
   color: #3E3E3E;
   margin-top: 32px;
   margin-bottom: 42px;
+  width: 500px;
+  margin: 30px auto;
 }
 
 .modal-btn:first-of-type {
-  margin-right: 41px;
+  margin-right: 0px;
+}
+
+.modal-element {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.modal-scroll {
+  width: 100%;
+  height: 442px;
+  overflow-x: scroll;
+}
+
+.btn-modal-wrapper {
+  display: flex;
+}
+
+.btn-modal {
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+  background: var(--primary);
+  padding: 15px;
+  margin: 0px 0;
+  height: 50px;
+}
+
+.btn-modal i {
+  margin-right: 10px;
+}
+
+.btn-modal-sec {
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 0.025em;
+  color: #2E2E2E;
+  background-color: transparent;
+  padding: 15px;
+  margin: 0px 0;
+  height: 50px;
+}
+
+.btn-modal-sec i {
+  margin-right: 10px;
+}
+
+.sec-line {
+  border-right: 1px solid #E9E9E9;
 }
 
 
@@ -681,17 +795,18 @@ body.in-category {
 }
 
 .header.in-category {
-  height: 630px;
+  height: 475px;
   border: 0;
   background: url('./media/bg-2.png') no-repeat;
-  background-size: 100% 480px;
+  background-size: 100% 330px;
 }
 
 .bg-circles.in-category {
   width: 310px;
   height: 400px;
   left: 40vw;
-  z-index: 2;
+  z-index: -1;
+  opacity: 0.3;
 }
 
 .circle.in-category {
@@ -722,8 +837,8 @@ body.in-category {
 }
 
 .help.in-category {
-  margin-left: auto;
-  margin-right: 52px;
+  margin-left: 28px;
+  margin-right: auto;
 }
 
 .guest-nav.in-category {
@@ -735,13 +850,17 @@ body.in-category {
 }
 
 .header-title {
-  margin-top: 56px;
+  margin: 40px 0px !important;
 }
 
 .header-title .title {
-  font-size: 27px;
+  font-size: 1.25rem;
   letter-spacing: 0.025em;
   color: #FFFFFF;
+}
+
+.arrow-more-blue {
+  width: 25px;
 }
 
 .categories.in-category {
@@ -750,25 +869,25 @@ body.in-category {
 
 /* Restaurants in Categories page */
 .category-restaurants {
-  margin: 60px 0 100px;
+  margin: 6px 0 45px;
 }
 
 .subtitle.in-category {
-  font-size: 21px;
+  font-size: 0.9rem;
   letter-spacing: 0.13em;
   color: #7C7C7C;
 }
 
 .title.in-category {
-  font-size: 50px;
+  font-size: 1.5rem;
   letter-spacing: 0.13em;
   color: #000000;
   margin-bottom: 50px;
 }
 
 .category-card {
-  width: 1200px;
-  height: 168px;
+  width: 100%;
+  height: 105px;
   background: #fff;
   border: 1px solid #E6E6E6;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.07);
@@ -780,16 +899,20 @@ body.in-category {
 
 .cat-rest-img {
   display: block;
-  width: 246px;
-  height: 168px;
+  width: 190px;
+  height: 100%;
 }
 
 .cat-rest-logo {
-  width: 150px;
-  height: 168px;
+  width: 115px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cat-rest-logo img {
+  width: 60px;
 }
 
 .mini-map {
@@ -803,18 +926,18 @@ body.in-category {
 
 .cat-rest-name {
   font-weight: 500;
-  font-size: 31px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 27px;
   letter-spacing: -0.055em;
   color: #000000;
   margin-bottom: 0;
-  margin-top: 32px;
+  margin-top: 9px;
 }
 
 .cat-rest-category {
   font-weight: 300;
-  font-size: 25px;
-  line-height: 29px;
+  font-size: 15px;
+  line-height: 19px;
   letter-spacing: -0.055em;
   color: #999999;
   margin: 0;
@@ -825,11 +948,11 @@ body.in-category {
 }
 
 .badge {
-  width: 144px;
-  height: 28px;
+  width: 100px;
+  height: 24px;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 11px;
+  line-height: 16px;
   text-align: center;
   letter-spacing: -0.055em;
   text-transform: uppercase;  
@@ -847,15 +970,36 @@ body.in-category {
 
 .promo {
   font-weight: 500;
-  font-size: 21px;
-  line-height: 25px;
+  font-size: 15px;
+  line-height: 18px;
   letter-spacing: -0.055em;
   color: #2F80ED;
+  margin-top: 0px;
+  margin-bottom: 8px;
 }
 
 .delivery {
   font-weight: 500;
-  font-size: 21px;
+  font-size: 15px;
   letter-spacing: -0.055em;
   color: #A8A8A8;
+  margin: 0px;
+  padding: 0px;
+  line-height: 14px;
+}
+
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .container {
+    padding: 35px 20px;
+  }
+
+  .category:last-of-type {
+    display: none;
+  }
+
+  .restaurants .card:last-of-type {
+    display: none;
+  }
 }
