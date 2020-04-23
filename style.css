@@ -841,7 +841,7 @@ body.in-category {
 }
 
 .header.in-category {
-  height: 475px;
+  height: 400px;
   border: 0;
   background: url('./media/bg-2.png') no-repeat;
   background-size: 100% 330px;
@@ -913,6 +913,10 @@ body.in-category {
   margin-top: 32px;
 }
 
+.back {
+  display: none;
+}
+
 /* Restaurants in Categories page */
 .category-restaurants {
   margin: 6px 0 45px;
@@ -938,20 +942,29 @@ body.in-category {
   border: 1px solid #E6E6E6;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
-  display: flex;
+  display: block;
   overflow: hidden;
   margin-bottom: 23px;
+}
+
+.category-card-wrapper {
+  display: flex;
+}
+
+.cat-rest-info-wrapper {
+  display: flex;
+  width: 100%;
 }
 
 .cat-rest-img {
   display: block;
   width: 190px;
-  height: 100%;
+  height: 105px;
 }
 
 .cat-rest-logo {
-  width: 115px;
-  height: 100%;
+  min-width: 115px;
+  height: 105px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1034,6 +1047,11 @@ body.in-category {
   line-height: 14px;
 }
 
+.cat-mobile-desc,
+.cat-buttons-mobile {
+  display: none;
+}
+
 
 /* Tablets */
 @media (max-width: 1020px) {
@@ -1048,6 +1066,18 @@ body.in-category {
 
   .restaurants .card:last-of-type {
     display: none;
+  }
+
+  .badge {
+    display: none;
+  }
+
+  .cat-rest-info {
+    margin: auto 0;
+  }
+
+  .important {
+    margin-right: 9px;
   }
 }
 
@@ -1177,7 +1207,7 @@ body.in-category {
     text-align: center;
     letter-spacing: 0.17em;
     color: #96A6FB;
-    margin: 0;
+    margin: 15px 0 5px;
   }
 
   .mobile-cat-title .title {
@@ -1627,14 +1657,231 @@ body.in-category {
     padding: 0 10px;
     margin-top: 10px;
   }
+  
 
-  .modal-scroll {
-    height: 100%;
+
+  /* Categories Page */
+  body.in-category {
+    background: #fff;
   }
 
-  .modal-element {
-    padding-top: 10px;
-    background: #fff;
-    height: 110px;
+
+  /* Header */
+  .header.in-category {
+    height: 167px;
+    background: #304FFE;
+  }
+
+  .bg-circles.in-category {
+    display: none;
+  }
+
+  .back {
+    display: flex;
+    align-items: center;
+  }
+
+  .back img {
+    height: 11px;
+    width: 22px;
+    transform: rotate(90deg);
+    margin-right: 9px;
+  }
+
+  .back p {
+    font-weight: 500;
+    font-size: 0.7rem;
+    letter-spacing: 0.025em;
+    color: #96A6FB;
+  }
+  
+  .logo-in-category {
+    margin-right: 9.8666vw;
+    margin-left: auto;
+  }
+
+  .categories.in-category {
+    display: none;
+  }
+
+  
+  /* Restaurants in Categories page */
+  .category-restaurants {
+    margin-top: 0;
+  }
+
+  .subtitle.in-category {
+    font-weight: 500;
+    font-size: 0.7rem;
+    letter-spacing: 0.17em;
+    color: #CFCFCF;
+  }
+
+  .title.in-category {
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-bottom: 28px;
+  }
+
+  .category-card {
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    border: 0;
+    position: relative;
+    display: block;
+  }
+
+  .category-card-wrapper {
+    display: flex;
+  }
+
+  .cat-rest-img {
+    display: none;
+  }
+
+  .cat-rest-logo {
+    width: 34vw;
+    min-width: 34vw;
+    height: 34vw;
+    /* display: block; */
+  }
+
+  .cat-rest-logo img {
+    width: 80%;
+  }
+
+  .cat-rest-info-wrapper {
+    border-left: 1px solid #E9E9E9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 9px;
+  }
+
+  .cat-rest-info {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+  
+  .cat-rest-name {
+    font-size: 1.1rem;
+    line-height: 1;
+    letter-spacing: 0.025em;
+    margin: 0;
+  }
+
+  .cat-rest-category {
+    font-size: 0.8rem;
+    letter-spacing: 0.025em;
+    margin: 0;
+  }
+
+  .cat-mobile-desc {
+    width: 100px;
+    font-size: 0.6rem;
+    line-height: 11px;
+    letter-spacing: 0.025em;
+    color: #4F4F4F;
+    margin: 5px 0;
+  }
+
+  .important {
+    margin: 0;
+  }
+
+  .promo,
+  .delivery {
+    margin-left: 17px;
+    position: relative;
+    font-weight: 500;
+    font-size: 0.7rem;
+    letter-spacing: -0.055em;
+  }
+
+  .promo {
+    margin-bottom: 3px;
+  }
+
+  .promo::before {
+    content: '';
+    display: block;
+    width: 11px;
+    height: 11px;
+    background: url('./media/sale.png');
+    position: absolute;
+    left: -17px;
+    top: 3px;
+  }
+
+  .delivery::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url('./media/scooter.png');
+    position: absolute;
+    left: -17px;
+    top: 1px;
+  }
+
+  .mobile-qeust.in-category {
+    top: 3px;
+    right: 3px;
+  }
+
+  .cat-buttons-mobile {
+    display: flex;
+  }
+
+  .cat-buttons-mobile .btn {
+    border-radius: 0;
+    border: 0;
+    height: 40px;
+    font-weight: bold;
+    font-size: 0.6rem;
+    letter-spacing: 0.025em;
+    border-top: 1px solid #E9E9E9;
+  }
+
+  .cat-buttons-mobile .btn:first-of-type {
+    min-width: calc(34vw + 1px); 
+    border: 0;
+  }
+
+  .cat-buttons-mobile .takeaway-btn {
+    border-right: 1px solid #E9E9E9;
+    padding-right: 40px;
+    position: relative;
+  }
+
+  .takeaway-btn::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('./media/pizza-icon.png') center center/cover;
+    position: absolute;
+    right: 20px;
+  }
+
+  .delivery-btn {
+    padding-right: 40px;
+    position: relative;
+  }
+
+  .delivery-btn::after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url('./media/home-icon-2.png') center center/cover;
+    position: absolute;
+    right: 20px;
   }
 }

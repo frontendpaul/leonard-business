@@ -17,46 +17,54 @@
         <div class="circle in-category"></div>
       </div>
 
-      <!-- Top bar -->
-      <nav class="nav-bar">
-        <a href="index.html">
-          <div class="logo">
-            <img src="./media/logo.png" alt="" class="logo-img">
-          </div>
-        </a>
-        <div class="help in-category">
-          <a href="#"><span>?</span>Help</a>
-        </div>
-        <nav class="guest-nav in-category">
-          <ul class="menu-list">
-            <li><a class="login" href="index.html" class="menu-link">Torna alla Home</a></li>
-            <li><a class="login" href="#" class="menu-link">Login</a></li>
-            <li><a class="register" href="#" class="menu-link">Registrati</a></li>
-          </ul>
-        </nav>
-      </nav>
-
-      <div class="title-wrapper header-title">
-        <div>
-          <h2 class="title">TUTTI I RISTORANTI</h2>
-        </div>
-        <img src="./media/Arrow-blue.png" alt="" class="arrow-more-blue">
+     <!-- Top bar -->
+     <nav class="nav-bar">
+      <p class="search">Cosa vuoi mangiare oggi?</p>
+      <div class="help">
+        <a href="#"><span>?</span>Help</a>
       </div>
-
-      <!-- Categories -->
-      <nav class="categories in-category">
+      <nav class="guest-nav">
         <ul class="menu-list">
-          <li class="category"><a href="category-1.html" class="c1"><span>Pizza</span></a></li>
-          <li class="category"><a href="category-1.html" class="c2"><span>Italiana</span></a></li>
-          <li class="category"><a href="category-1.html" class="c3"><span>Aperitivo</span></a></li>
-          <li class="category"><a href="category-1.html" class="c4"><span>Estera</span></a></li>
-          <li class="category"><a href="category-1.html" class="c5"><span>Carne pesce</span></a></li>
-          <li class="category"><a href="category-1.html" class="c6"><span>Scpeciali</span></a></li>
+          <li><a class="login" class="menu-link">Benvenuto <i style="opacity: 0.8; position: relative; top: 1px; left: 7px;" class="fas fa-caret-right"></i></a></li>
+          <li><a class="login" href="#" class="menu-link" style="font-weight: 500;">Login</a></li>
+          <li><a class="register" href="#" class="menu-link">Registrati</a></li>
         </ul>
       </nav>
-
+      <nav class="mobile-nav">
+        <a href="#" class="login">Login <img src="./media/user.png " alt="" class="login-img"></a>
+        <div class="mobile-menu-toggler">
+          <div class="burger-bar"></div>
+        </div>
+      </nav>
+      <a href="index.html" class="logo-in-category">
+        <div class="logo">
+          <img src="./media/logo.png" alt="" class="logo-img">
+        </div>
+      </a>
+      <div class="back">
+        <img src="./media/Arrow.png" alt="">
+        <p>Indientro</p>
+      </div>
+    </nav>
+    
+    <div class="mobile-cat-title">
+      <h3 class="subtitle">SCOPRI LE CATEGORIE</h3>
+      <h2 class="title">Cosa vuoi mangiare oggi?</h2>
     </div>
-  </header>
+    <!-- Categories -->
+    <nav class="categories in-category">
+      <ul class="menu-list">
+        <li class="category"><a href="category-1.html" class="c1"><span>Pizza</span></a></li>
+        <li class="category"><a href="category-1.html" class="c2"><span>Italiana</span></a></li>
+        <li class="category"><a href="category-1.html" class="c3"><span>Aperitivo</span></a></li>
+        <li class="category"><a href="category-1.html" class="c4"><span>Estera</span></a></li>
+        <li class="category"><a href="category-1.html" class="c5"><span>Carne pesce</span></a></li>
+        <li class="category"><a href="category-1.html" class="c6"><span>Speciali</span></a></li>
+      </ul>
+    </nav>
+    
+  </div>
+</header>
 
   <div class="container">
     <section class="category-restaurants">
@@ -64,55 +72,148 @@
       <h2 class="title in-category">PIZZA</h2>
 
       <div class="category-card js-modal-btn">
-        <img src="./media/pizza-2.jpg" alt="" class="cat-rest-img">
-        <div class="cat-rest-logo">
-          <img src="./media/rest-logo-2.png" alt="">
+        <div class="category-card-wrapper">
+          <img src="./media/pizza-2.jpg" alt="" class="cat-rest-img">
+          <div class="cat-rest-logo">
+            <img src="./media/rest-logo-2.png" alt="">
+          </div>
+          <div class="cat-rest-info-wrapper">
+            <div class="cat-rest-info">
+              <h2 class="cat-rest-name">Alice Pizza - La Storta</h2>
+              <h3 class="cat-rest-category">Cat. <span>Pizza</span></h3>
+              <div class="badge">Best Choice</div>
+            </div>
+            <div class="cat-mobile-desc">Lorem ipsum dolor sit
+              amet, consectetur...</div>
+            <div class="important">
+              <p class="promo">30% di sconto se spendi almeno 50€</p>
+              <p class="delivery">Consegna gratis</p>
+            </div>
+            <div class="btn btn-secondary mobile-qeust in-category js-modal-btn" id="rest_id-1">?</div>
+          </div>
         </div>
-        <div class="cat-rest-info">
-          <h2 class="cat-rest-name">Alice Pizza - La Storta</h2>
-          <h3 class="cat-rest-category">Cat. <span>Pizza</span></h3>
-          <div class="badge">Best Choice</div>
-        </div>
-        <div class="important">
-          <p class="promo">30% di sconto se spendi almeno 50€</p>
-          <p class="delivery">Consegna gratis</p>
-        </div>
-      </div>
-
-      <div class="category-card js-modal-btn">
-        <img src="./media/pizza-2.jpg" alt="" class="cat-rest-img">
-        <div class="cat-rest-logo">
-          <img src="./media/rest-logo-2.png" alt="">
-        </div>
-        <div class="cat-rest-info">
-          <h2 class="cat-rest-name">Alice Pizza - La Storta</h2>
-          <h3 class="cat-rest-category">Cat. <span>Pizza</span></h3>
-          <div class="badge">Best Choice</div>
-        </div>
-        <div class="important">
-          <p class="promo">30% di sconto se spendi almeno 50€</p>
-          <p class="delivery">Consegna gratis</p>
+        <div class="cat-buttons-mobile">
+          <div class="btn">Prenota ora</div>
+          <div class="btn btn-secondary takeaway-btn">Takeaway</div>
+          <div class="btn btn-secondary delivery-btn">Delivery</div>
         </div>
       </div>
 
       <div class="category-card js-modal-btn">
-        <img src="./media/pizza-2.jpg" alt="" class="cat-rest-img">
-        <div class="cat-rest-logo">
-          <img src="./media/rest-logo-2.png" alt="">
+        <div class="category-card-wrapper">
+          <img src="./media/pizza-2.jpg" alt="" class="cat-rest-img">
+          <div class="cat-rest-logo">
+            <img src="./media/rest-logo-2.png" alt="">
+          </div>
+          <div class="cat-rest-info-wrapper">
+            <div class="cat-rest-info">
+              <h2 class="cat-rest-name">Alice Pizza - La Storta</h2>
+              <h3 class="cat-rest-category">Cat. <span>Pizza</span></h3>
+              <div class="badge">Best Choice</div>
+            </div>
+            <div class="cat-mobile-desc">Lorem ipsum dolor sit
+              amet, consectetur...</div>
+            <div class="important">
+              <p class="promo">30% di sconto se spendi almeno 50€</p>
+              <p class="delivery">Consegna gratis</p>
+            </div>
+            <div class="btn btn-secondary mobile-qeust in-category js-modal-btn" id="rest_id-1">?</div>
+          </div>
         </div>
-        <div class="cat-rest-info">
-          <h2 class="cat-rest-name">Alice Pizza - La Storta</h2>
-          <h3 class="cat-rest-category">Cat. <span>Pizza</span></h3>
-          <div class="badge">Best Choice</div>
+        <div class="cat-buttons-mobile">
+          <div class="btn">Prenota ora</div>
+          <div class="btn btn-secondary takeaway-btn">Takeaway</div>
+          <div class="btn btn-secondary delivery-btn">Delivery</div>
         </div>
-        <div class="important">
-          <p class="promo">30% di sconto se spendi almeno 50€</p>
-          <p class="delivery">Consegna gratis</p>
+      </div>
+
+      <div class="category-card js-modal-btn">
+        <div class="category-card-wrapper">
+          <img src="./media/pizza-2.jpg" alt="" class="cat-rest-img">
+          <div class="cat-rest-logo">
+            <img src="./media/rest-logo-2.png" alt="">
+          </div>
+          <div class="cat-rest-info-wrapper">
+            <div class="cat-rest-info">
+              <h2 class="cat-rest-name">Alice Pizza - La Storta</h2>
+              <h3 class="cat-rest-category">Cat. <span>Pizza</span></h3>
+              <div class="badge">Best Choice</div>
+            </div>
+            <div class="cat-mobile-desc">Lorem ipsum dolor sit
+              amet, consectetur...</div>
+            <div class="important">
+              <p class="promo">30% di sconto se spendi almeno 50€</p>
+              <p class="delivery">Consegna gratis</p>
+            </div>
+            <div class="btn btn-secondary mobile-qeust in-category js-modal-btn" id="rest_id-1">?</div>
+          </div>
+        </div>
+        <div class="cat-buttons-mobile">
+          <div class="btn">Prenota ora</div>
+          <div class="btn btn-secondary takeaway-btn">Takeaway</div>
+          <div class="btn btn-secondary delivery-btn">Delivery</div>
+        </div>
+      </div>
+
+      <div class="category-card js-modal-btn">
+        <div class="category-card-wrapper">
+          <img src="./media/pizza-2.jpg" alt="" class="cat-rest-img">
+          <div class="cat-rest-logo">
+            <img src="./media/rest-logo-2.png" alt="">
+          </div>
+          <div class="cat-rest-info-wrapper">
+            <div class="cat-rest-info">
+              <h2 class="cat-rest-name">Alice Pizza - La Storta</h2>
+              <h3 class="cat-rest-category">Cat. <span>Pizza</span></h3>
+              <div class="badge">Best Choice</div>
+            </div>
+            <div class="cat-mobile-desc">Lorem ipsum dolor sit
+              amet, consectetur...</div>
+            <div class="important">
+              <p class="promo">30% di sconto se spendi almeno 50€</p>
+              <p class="delivery">Consegna gratis</p>
+            </div>
+            <div class="btn btn-secondary mobile-qeust in-category js-modal-btn" id="rest_id-1">?</div>
+          </div>
+        </div>
+        <div class="cat-buttons-mobile">
+          <div class="btn">Prenota ora</div>
+          <div class="btn btn-secondary takeaway-btn">Takeaway</div>
+          <div class="btn btn-secondary delivery-btn">Delivery</div>
+        </div>
+      </div>
+
+      <div class="category-card js-modal-btn">
+        <div class="category-card-wrapper">
+          <img src="./media/pizza-2.jpg" alt="" class="cat-rest-img">
+          <div class="cat-rest-logo">
+            <img src="./media/rest-logo-2.png" alt="">
+          </div>
+          <div class="cat-rest-info-wrapper">
+            <div class="cat-rest-info">
+              <h2 class="cat-rest-name">Alice Pizza - La Storta</h2>
+              <h3 class="cat-rest-category">Cat. <span>Pizza</span></h3>
+              <div class="badge">Best Choice</div>
+            </div>
+            <div class="cat-mobile-desc">Lorem ipsum dolor sit
+              amet, consectetur...</div>
+            <div class="important">
+              <p class="promo">30% di sconto se spendi almeno 50€</p>
+              <p class="delivery">Consegna gratis</p>
+            </div>
+            <div class="btn btn-secondary mobile-qeust in-category js-modal-btn" id="rest_id-1">?</div>
+          </div>
+        </div>
+        <div class="cat-buttons-mobile">
+          <div class="btn">Prenota ora</div>
+          <div class="btn btn-secondary takeaway-btn">Takeaway</div>
+          <div class="btn btn-secondary delivery-btn">Delivery</div>
         </div>
       </div>
     </section>
   </div>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -122,15 +223,18 @@
             <h3 class="footer-title">Leonard System</h3>
             <p class="footer-info">Via Marsala, 29H, 00185 Roma RM</p>
           </div>
+        </div>        
+        <div class="mobile-copyright">
+          <p>&copy; 2020 Leonard System SRL</p>
+          <p>All rightS reserved</p>
         </div>
-
         <div class="socials-wrapper">
           <p>Seguici sui social</p>
           <nav class="socials">
             <ul class="menu-list">
-              <li class="social"><a href=""><img src="./media/linkedin.png" alt=""></a></li>
-              <li class="social"><a href=""><img src="./media/instagram.png" alt=""></a></li>
-              <li class="social"><a href=""><img src="./media/facebook.png" alt=""></a></li>
+              <li class="social"><a class="linkedin" href=""></a></li>
+              <li class="social"><a class="insta" href=""></a></li>
+              <li class="social"><a class="facebook" href=""></a></li>
             </ul>
           </nav>
         </div>
@@ -138,7 +242,6 @@
 
       <div class="row">
         <p class="rights">All rights reserved</p>
-
         <nav class="terms">
           <ul class="menu-list">
             <li class="term"><a href="">PRIVACY POLICY</a></li>
@@ -146,6 +249,10 @@
           </ul>
         </nav>
       </div>
+    </div>
+
+    <div class="bg-f-circles">
+      <div class="bg-f-circle"></div>
     </div>
   </footer>
 
